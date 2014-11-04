@@ -1,0 +1,19 @@
+.nuevalinea{
+	border-style: ridge;
+	background-color: red;
+}
+
+.lineas{
+	padding: 10px;
+	border-style: none;
+	margin: 10px 10px 0px 30px;
+	width: 90%;
+	height: 20%;
+	background-color: rgba(244, 234, 255, 34);
+-moz-box-shadow: 4px 4px 5px #f68f4f; 
+-webkit-box-shadow: 4px 4px 5px #f68f4f; 
+box-shadow: 4px 4px 5px #f68f4f; 
+-moz-border-radius: 25px; 
+-webkit-border-radius: 25px; 
+border-radius: 25px;
+}

@@ -1,0 +1,76 @@
+.timeline li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.timeline li > time + time:before {
+    content: "-";
+}
+
+
+.timeline li {
+    border-top: 10px dotted red;
+    padding-top: 10px;
+}
+.timeline dl,
+.timeline li {
+    margin: 0;
+}
+
+.timeline li {
+    position: relative;
+}
+
+.timeline li > time {
+    position: absolute;
+    left: -2.5em;
+}
+.timeline li > time + time {
+    top: 1.5em;
+    left: -2.85em;
+}
+
+.timeline li {
+    padding-left: 1em;
+    padding-bottom: 1em;
+}
+
+.timeline li > cite {
+    font-size: 1em;
+    line-height: 0.7em;
+    padding-bottom: 0.5em;
+}
+.timeline dl {
+    padding-left: 1.5em;
+}
+.timeline li > time:first-of-type:after {
+    content: "\00B7";
+    font-size: 5.2em;
+    position: absolute;
+    right: -0.35em;
+    top: -0.05em;
+}
+
+.timeline li dl {
+    max-height: 0;
+    overflow: hidden;
+}
+.timeline li > cite {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.timeline li.expanded dl {
+    max-height: 40em;
+}
+
+.timeline li dl {
+    transition: max-height 500ms ease-in-out;
+}
+
+.timeline li dl {
+    -webkit-transition: max-height 500ms ease-in-out;
+       -moz-transition: max-height 500ms ease-in-out;
+         -o-transition: max-height 500ms ease-in-out;
+            transition: max-height 500ms ease-in-out;
+}

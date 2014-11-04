@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="Shortcut Icon" type="image/x-icon" href="../img/3.ico">
+	<title>Linea de Tiempo</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="../css/font.css">
+	<link rel="stylesheet" type="text/css" href="../css/css.css">
+	<link rel="stylesheet" type="text/css" href="../css/lineas.css">
+	<link rel="stylesheet" type="text/css" href="../css/formulario.css">
+	<link rel="stylesheet" type="text/css" href="../css/emergente.css">
+
+	<!-- JavaScript -->
+	<script src="../js/jquery-1.11.1.min.js"></script>   
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/menu.js"></script>
+</head>
+
+<body>
+	<div id="header1">
+	</div>
+	<div id="header2">
+		<img src="../img/2.png" alt="2" title="Linea de Tiempo" id="imgprin2"/></li>
+	
+	<nav id="nav">
+		<ul id="ul">
+			<li class="c"><a href="cuentaadmin.html">HOME</a></li>
+			<li class="a"><a href="verlinea.html">VER LINEAS DE TIEMPO</a></li>
+			<li class="b"><a href="ayuda.html">AYUDA</span></a></li>
+			<li class="d"><a href="errores.html">INFORMAR ERRORES</a></li>
+		</ul>
+		<li><a href="#" id="pull"><img src="../img/nav-icon.png" alt="2" title="Menu" id="imgmenu"/></a></li>
+	</nav>
+	</div>
+	<div id="section1">
+	<div id="agregar">
+		<input type="button" value="Agregar Nueva" class="button" data-type="zoomin" />
+	
+	<div class="overlay-container">
+		<div class="window-container zoomin">
+			<div class="crearlinea">
+	<form>
+		<fieldset>
+			<legend>Datos para crear linea de tiempo</legend>
+		<b>Nombre de la linea:</b>
+		<input type="text" id="nomlinea" placeholder="Nombre de Linea de Tiempo" required="required"><br>
+		<b>Fecha de Inicio:</b>
+		<input type="text" name="fechaini" id="fechaini" placeholder="Año de Inicio, Ej.: 1995" maxlength="4" onkeypress="return numbersOnly(this, event)" title="Solo se aceptan Numeros" /><br>
+		<b>Fecha Final:</b>
+		<input type="text" name="fechafin" id="fechafin" placeholder="Año de Inicio, Ej.: 2014" maxlength="4" onkeypress="return numbersOnly(this, event)" title="Solo se aceptan Numeros" /><br>
+		<b>Seleccione diseño de la Linea de Tiempo</b><br>
+		<table>
+		<tr>
+			<td><input type="radio" checked="true" value="live"></td>
+			<td><img src="../img/live.png" class="imgline"></td>
+			<td><input type="radio" value="lich"></td>
+			<td><img src="../img/lich.png" class="imgline"></td>
+		</tr>
+		<tr>
+			<td><input type="radio" value="liti"></td>
+			<td><img src="../img/liti.png" class="imgline"></td>
+			<td><input type="radio" value="liho"></td>
+			<td><img src="../img/liho.png" class="imgline"></td>
+		</tr>
+	</table>
+	<b>Informacion de la Linea</b>
+		<textarea rows="10" cols="30"></textarea>
+		<div id="botones">
+		<div class="close" id="crear">Cear Linea</div>
+		<div class="close">Cancelar</div>
+		</div>
+		</fieldset>
+	</form>
+</div>
+		</div>
+	</div>
+		
+	<script src="../js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="../js/emergente.js"></script>
+	</div>
+	<div class="timeline">
+		<iframe src="linea1.html" class="lineas" height="255" width="895"></iframe>
+		<iframe src="linea2.html" class="lineas" height="255" width="895"></iframe>
+		<iframe src="linea3.html" class="lineas" height="255" width="895"></iframe>
+		<iframe src="linea4.html" class="lineas" height="255" width="895"></iframe>
+	</div>
+</div>
+	<div id="aside2">
+	</div>
+	<div id="footer">
+		<div class="contenfooter">
+			<div class="tituloceli">
+				<center>
+					<div id="vinculos">
+						<div class="linkscel1"> 
+							<a href="../index.html">Pagina de Presentacion</a><br/> 
+							<a href="contactanos.html">Contactanos</a><br/> 
+							<a href="creadores.html">Quienes Somos</a><br/>
+							<a href="ayuda.html">Ayuda</a><br />
+						</div>
+						<div class="linkscel2"> 
+							<a href="cuentaadmin">Pagina Principal</a><br/>
+							<a href="verlinea.html">Ver Lineas de Tiempo</a><br />
+							<a href="errores.html">Informar Errores</a><br/>  
+						</div>
+						<div class="linkscel3">
+							<span class="h1fo">Copyrigth 2014</span><br />
+							<span class="h1foo">Universidad Don Bosco</span><br />
+							<span class="h1foo">Jorge Yovani Peña Vivas</span><br />
+							<span class="h1foo">Willian Palacios</span>
+						</div> 
+						<div class="linkscel4">
+							<span class="h1fo">Redes Sociales</span><br/>
+							<a href="https://www.facebook.com/jorge.p.391" class="redes"><img class="imgfoo" src="../img/icof.png"></a>
+							<a href="https://twitter.com/JorgeP503" class="rede"><img class="imgfoo" src="../img/icot.png"></a>
+						</div>
+					</div>
+				</center>
+			</div>
+		</div>
+		<br><br/>
+	</div>
+</body>
+</html>

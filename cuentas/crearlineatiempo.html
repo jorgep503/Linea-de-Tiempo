@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="Shortcut Icon" type="image/x-icon" href="../img/3.ico">
+<title>Linea de Tiempo</title>
+<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="../css/font.css">
+	<link rel="stylesheet" type="text/css" href="../css/css.css">
+	<link rel="stylesheet" type="text/css" href="../css/formulario.css">
+
+ <!-- JavaScript -->
+ <script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../js/crearlinea.js"></script>
+    <script type="text/javascript" src="../js/lineatiempo.js"></script>
+    <script type="text/javascript" src="../js/validaform.js"></script>
+</head>
+
+<body>
+<div id="header1">
+	<h4 class="ingresar"><a href="cuentaadmin.html">HOME</a></h4>
+</div>
+<div id="header2">
+<img src="../img/2.png" alt="2" title="2" id="imgprin"/></li>
+</div>
+<div id="nav">
+	<div id="menucuenta">
+	<ul class="menu"><a href="cuentaadmin.html">HOME</a></ul>
+	<ul class="menu"><a href="verlinea.html">VER LINEAS DE TIEMPO</a></ul>
+	<ul class="menu"><a href="#">CREAR LINEA DE TIEMPO</a></ul>
+	<ul class="menu"><a href="ayuda.html">AYUDA</a></ul>
+	<UL class="menu"><a href="errores.html">INFORMAR ERORES</a></UL>
+	</div>
+</div>
+<div id="section">
+<div class="crearlinea">
+	<form>
+		<fieldset>
+			<legend>Datos para crear linea de tiempo</legend>
+		<label>Nombre de la linea</label>
+		<input type="text" id="nomlinea" placeholder="Nombre de Linea de Tiempo" required="required"><br>
+		<label>Fecha de Inicio</label>
+		<input type="text" name="fechaini" id="fechaini" placeholder="Año de Inicio, Ej.: 1995" maxlength="4" onkeypress="return numbersOnly(this, event)" title="Solo se aceptan Numeros" /><br>
+		<label>Fecha Final</label>
+		<input type="text" name="fechafin" id="fechafin" placeholder="Año de Inicio, Ej.: 2014" maxlength="4" onkeypress="return numbersOnly(this, event)" title="Solo se aceptan Numeros" /><br>
+		<input type="button" name="crear" id="crear" value="Crear">
+		</fieldset>
+	</form>
+</div>
+</div>
+<div id="aside1">
+
+</div>
+<div id="aside2">
+
+</div>
+<div id="footer">
+		<div class="contenfooter">
+			<div class="tituloceli">
+				<center>
+					<div id="vinculos">
+						<div class="linkscel1"> 
+							<a href="../index.html">Pagina de Presentacion</a><br/> 
+							<a href="contactanos.html">Contactanos</a><br/> 
+							<a href="creadores.html">Quienes Somos</a><br/>
+							<a href="ayuda.html">Ayuda</a><br />
+						</div>
+						<div class="linkscel2"> 
+							<a href="cuentaadmin">Pagina Principal</a><br/>
+							<a href="verlinea.html">Ver Lineas de Tiempo</a><br />
+							<a href="crearlineatiempo.html">Crear Linea de Tiempo</a><br />
+							<a href="errores.html">Informar Errores</a><br/>  
+						</div>
+						<div class="linkscel3">
+							<span class="h1fo">Copyrigth 2014</span><br />
+							<span class="h1foo">Universidad Don Bosco</span><br />
+							<span class="h1foo">Jorge Yovani Peña Vivas</span><br />
+							<span class="h1foo">Willian Palacios</span>
+						</div> 
+						<div class="linkscel4">
+							<span class="h1fo">Redes Sociales</span><br/>
+							<a href="https://www.facebook.com/jorge.p.391"><img class="imgfoo" src="../img/icof.png"></a>
+							<a href="https://twitter.com/JorgeP503"><img class="imgfoo" src="../img/icot.png"></a>
+						</div>
+					</div>
+				</center>
+			</div>
+		</div>
+		<br><br/>
+	</div>
+</body>
+</html>

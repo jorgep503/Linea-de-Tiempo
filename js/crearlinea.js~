@@ -1,0 +1,145 @@
+var fechaini = document.getElementById(fechaini);
+var fechafin = document.getElementById(fechafin);
+var nomlinea = document.getElementById(nomlinea);
+/*
+
+ function Chronoline(domElement, events, options) {
+    this.VERSION = "0.1.1";
+
+    var defaults = {
+        defaultStartDate: null,  // the date furthest to the left on load. Defaults to today
+        startDate: null,  // start of the timeline. Defaults to first event date
+        endDate: null,  // end of the timeline. Defauls to the last event date
+
+        visibleSpan: 2592000000,  // in milliseconds,
+        timelinePadding: 0, // in ms. Adds this much time to the front and back to get some space
+        fitVisibleSpan: false, // condense the entire span to be visible without scrolling
+
+        topMargin: 40,  // overhead space on the canvas. useful for additional content
+        eventHeight: 5,  // how tall event events are
+        eventMargin: 4,  // how far apart the events are
+        dateLabelHeight: 50, // how tall the bottom margin for the dates is
+        hashLength: 4,  // length of the hash marks for the days
+        minEventsHeight: 40,
+        maxEventsHeight: 1000,
+
+        hashColor: '#b8b8b8',
+
+        eventAttrs: {  // attrs for the bars and circles of the events
+            fill: '#0055e1',
+            stroke: '#0055e1',
+            "stroke-width": 2
+        },
+
+        // predefined fns include: null (for daily), isFifthDay, isHalfMonth
+        hashInterval: null,  // fn: date -> boolean, if a hash should appear
+        labelInterval: null,  // fn: date -> boolean, if a hash should appear
+        labelFormat: '%d',  // based on strftime
+
+        subLabel: 'month',  // TODO generalize this code
+        subLabelMargin: 2,
+        subLabelAttrs: {'font-weight': 'bold'},
+        floatingSubLabels: true,  // whether sublabels should float into view
+
+        subSubLabel: 'year',  // TODO generalize this code
+        subSubLabelMargin: 2,
+        subSubLabelAttrs: {'font-weight': 'bold'},
+        floatingSubSubLabels: true,  // whether subSublabels should float into view
+
+        fontAttrs: {
+            'font-size': 10,
+            fill: '#000000'
+        },
+        scrollable: true,
+        // predefined fns include: prevMonth, nextMonth, prevQuarter, nextQuarter, backWeek, forwardWeek
+        scrollLeft: backWeek,
+        scrollRight: forwardWeek,
+        animated: false,  // whether scrolling is animated or just jumps, requires jQuery
+
+        tooltips: false,  // activates qtip tooltips. Otherwise, you just get title tooltips
+        markToday: 'line',  // 'line', 'labelBox', false
+        todayAttrs: {'stroke': '#484848'},
+
+        sections: null,
+        floatingSectionLabels: true,
+        sectionLabelAttrs: {},
+        sectionLabelsOnHover: true,
+
+        draggable: false, // requires jQuery, allows mouse dragging
+
+        continuousScroll: true,  // requires that scrollable be true, click-and-hold arrows
+        continuousScrollSpeed: 1,  // I believe this is px/s of scroll. There is no easing in it
+    };
+    var t = this;
+
+    // FILL DEFAULTS
+    for(var attrname in defaults){ t[attrname] = defaults[attrname];}
+    for(var attrname in options){ t[attrname] = options[attrname];}
+
+    // options shouldn't be on if there aren't any sections
+    t.floatingSectionLabels &= t.sections !== null;
+    t.sectionLabelsOnHover &= t.sections !== null;
+
+    // this is hacky, but necessary for backwards-compability
+    t.originalStartDate = t.startDate;
+    t.originalEndDate = t.endDate;
+    t.originalDefaultStartDate = t.defaultStartDate;
+
+    // HTML elements to put everything in
+    t.domElement = domElement;
+
+    t.wrapper = document.createElement('div');
+    t.wrapper.className = 'chronoline-wrapper';
+    t.domElement.appendChild(t.wrapper);
+
+    // SORT EVENTS
+    t.sortEvents = function(a, b){
+        a = a.dates;
+        b = b.dates;
+
+        var aEnd = a[a.length - 1].getTime();
+        var bEnd = b[b.length - 1].getTime();
+        
+        if(aEnd != bEnd){
+            return aEnd - bEnd;
+        }
+        return a[0].getTime() - b[0].getTime();
+    };
+
+ $(document).ready(function(){
+
+      var events = [
+      {dates: [new Date(fechaini)], title: "Inicio de linea de tiempo", section: 0},
+      {dates: [new Date(fechafin)], title: "Final de la Linea de Tiempo", section: 2},
+      ];
+
+      var sections = [
+      {dates: [new Date(2011, 2, 31), new Date(2011, 9, 28)], title: "2011 MLB Season", section: 0, attrs: {fill: "#d4e3fd"}},
+      {dates: [new Date(2012, 2, 28), new Date(2012, 9, 3)], title: "2012 MLB Regular Season", section: 1, attrs: {fill: "#d4e3fd"}},
+      {dates: [new Date(2012, 1, 29), new Date(2012, 3, 4)], title: "Spring Training", section: 2, attrs: {fill: "#eaf0fa"}},
+      {dates: [new Date(2012, 9, 4), new Date(2012, 9, 31)], title: "2012 MLB Playoffs", section: 3, attrs: {fill: "#eaf0fa"}}
+      ];
+
+      var timeline1 = new Chronoline(document.getElementById("crear"), events,
+        {animated: true,
+         tooltips: true,
+         defaultStartDate: new Date(fechaini),
+         sections: sections,
+         sectionLabelAttrs: {'fill': '#997e3d', 'font-weight': 'bold'},
+      });
+
+      $('#to-today').click(function(){timeline1.goToToday();});
+
+      }*/
+
+      
+     document.getElementById('crear').onclick = function crear(){
+		location.href = "../cuentas/verlinea.html";
+         var nuevalinea = document.createElement("div");
+         nuevalinea.class="nuevalinea";
+         var btn = document.createElement('input');
+  btn.type ="text";
+  btn.value="Boton "
+  nuevalinea.appendChild(btn);
+         document.getElementById("lineas").appendChild(nuevalinea);
+}
